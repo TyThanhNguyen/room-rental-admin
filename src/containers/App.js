@@ -52,9 +52,9 @@ class App extends React.Component {
                         menus={Data.menus}
                         username="User Admin"/>
 
-            {/* <div style={styles.container}>
+            <div style={styles.container}>
               {this.props.children}
-            </div> */}
+            </div>
         </div>
       </MuiThemeProvider>
     );

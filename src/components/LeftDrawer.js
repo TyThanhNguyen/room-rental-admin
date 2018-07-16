@@ -66,7 +66,7 @@ const LeftDrawer = (props) => {
                         style={styles.menuItem}
                         primaryText={menu.text}
                         leftIcon={menu.icon}
-                        containerElement={<Link to={menu.Link}/>}
+                        containerElement={<Link to={menu.link}/>}
                     />
                 )}
             </div>
