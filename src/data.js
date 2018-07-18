@@ -13,14 +13,14 @@ import ChevronRight from 'material-ui/svg-icons/navigation/chevron-right';
 const data = {
   menus: [
     { text: 'DashBoard', icon: <Assessment/>, link: '/dashboard' },
-    { text: 'Bill Include', icon: <Receipt/>, link: '/billinclude' },
-    { text: 'Facility', icon: <GridOn/>, link: '/facility' },
-    { text: 'Property', icon: <GridOn/>, link: '/property' },
+    { text: 'Bill Includeds', icon: <Receipt/>, link: '/billinclude' },
+    { text: 'Facilities', icon: <GridOn/>, link: '/facility' },
+    { text: 'Properties', icon: <GridOn/>, link: '/property' },
     { text: 'Room Details', icon: <GridOn/>, link: '/roomdetails' },
-    { text: 'Type of Room', icon: <GridOn/>, link: '/roomtype' },
-    { text: 'Security', icon: <Security/>, link: '/security' },
-    { text: 'Place', icon: <Place/>, link: '/place' },
-    { text: 'Room', icon: <GridOn/>, link: '/room' },
+    { text: 'Type of Rooms', icon: <GridOn/>, link: '/roomtype' },
+    { text: 'Securities', icon: <Security/>, link: '/security' },
+    { text: 'Places', icon: <Place/>, link: '/place' },
+    { text: 'Rooms', icon: <GridOn/>, link: '/room' },
     { text: 'Login Page', icon: <PermIdentity/>, link: '/login' }
   ],
   tablePage: {

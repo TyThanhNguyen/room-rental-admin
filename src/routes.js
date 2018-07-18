@@ -2,9 +2,10 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './containers/App';
 import Dashboard from './containers/Dashboard';
+
 import BillInclude from './containers/BillInclude/BillInclude';
-import BillNewPage from './containers/BillInclude/BillIncludeForm';
-import BillEditPage from './containers/BillInclude/BillIncludeForm';
+import BillNewPage from './containers/BillInclude/NewBillIncludeForm';
+import BillEditPage from './containers/BillInclude/EditBillIncludeForm';
 
 import Facility from './containers/Facility/Facility';
 import FacilityNewPage from './containers/Facility/FacilityForm';
@@ -46,7 +47,7 @@ export default (
 
       <Route path="billinclude" component={BillInclude}/>
       <Route path="billinclude/new" component={BillNewPage}/>
-      <Route path="billinclude/edit" component={BillEditPage}/>
+      <Route path="billinclude/:singleBillItem/edit" component={BillEditPage}/>
 
       <Route path="facility" component={Facility}/>
       <Route path="facility/new" component={FacilityNewPage}/>

@@ -13,8 +13,9 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 import {grey200, pink500, grey500} from 'material-ui/styles/colors';
 import styles from '../../styles';
 import Data from '../../data';
+import { connect } from 'react-redux';
 
-const TablePage = () => {
+const TablePage = (props) => {
     const styles = {
         floatingActionButton: {
             margin: 0,
@@ -59,16 +60,14 @@ const TablePage = () => {
                 <Table>
                     <TableHeader>
                         <TableRow>
-                            <TableHeaderColumn style={styles.columns.id}>ID</TableHeaderColumn>
                             <TableHeaderColumn style={styles.columns.name}>Item</TableHeaderColumn>
                             <TableHeaderColumn style={styles.columns.edit}>Edit</TableHeaderColumn>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        {Data.tablePage.items.map(item =>
+                        {props.facility.map(item =>
                             <TableRow key={item.id}>
-                                <TableRowColumn style={styles.columns.id}>{item.id}</TableRowColumn>
-                                <TableRowColumn style={styles.columns.name}>{item.name}</TableRowColumn>
+                                <TableRowColumn style={styles.columns.name}>{item.item}</TableRowColumn>
                                 <TableRowColumn style={styles.columns.edit}>
                                     <Link className="button" to="/facility/edit">
                                         <FloatingActionButton zDepth={0}
@@ -89,4 +88,8 @@ const TablePage = () => {
     );
 };
 
-export default TablePage;
+const mapStateToProps = (state) => ({
+    facility: state.facility
+})
+
+export default connect(mapStateToProps)(TablePage);
