@@ -11,8 +11,6 @@ import { FloatingActionButton,
 import ContentCreate from 'material-ui/svg-icons/content/create';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import {grey200, pink500, grey500} from 'material-ui/styles/colors';
-import styles from '../../styles';
-import Data from '../../data';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import {addBillInclude} from '../../actions/BillIncluded';

@@ -1,17 +1,16 @@
-import uuid from 'uuid';
-
 export const addFacility = ({
+        id = '',
         item = ''
     }) => ({
         type: 'ADD_FACILITY',
         facility: {
-            id: uuid(),
+            id,
             item
         }
 });
 
-export const editFacility = ({id, updates}) => ({
+export const editFacility = ({id, item}) => ({
     type: 'EDIT_FACILITY',
     id,
-    updates
+    item
 });

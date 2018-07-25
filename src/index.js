@@ -14,9 +14,7 @@ import { addFacility } from './actions/Facility';
 injectTapEventPlugin();
 
 const store = configureStore();
-// store.dispatch(addBillInclude({ item: 'WiFi in Room (Free)'}));
-// store.dispatch(addBillInclude({ item: 'Heating'}));
-// store.dispatch(addFacility({ item: 'Furnished'}));
+
 store.subscribe(() => {
     console.log('state: ', store.getState());
 });

@@ -11,7 +11,6 @@ export default (state = [], action) => {
             return state.map((billInclude) => {
                 if (billInclude.id === action.id) {
                     let itemObject = {id: action.id, item: action.item}
-                    console.log("itemObject: ", itemObject);
                 // object spread operator 
                     return {
                         ...billInclude,

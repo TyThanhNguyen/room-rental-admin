@@ -15,10 +15,10 @@ const data = {
     { text: 'DashBoard', icon: <Assessment/>, link: '/dashboard' },
     { text: 'Bill Includeds', icon: <Receipt/>, link: '/billinclude' },
     { text: 'Facilities', icon: <GridOn/>, link: '/facility' },
-    { text: 'Properties', icon: <GridOn/>, link: '/property' },
+    { text: 'Properties', icon: <GridOn/>, link: '/propertyrule' },
     { text: 'Room Details', icon: <GridOn/>, link: '/roomdetails' },
     { text: 'Type of Rooms', icon: <GridOn/>, link: '/roomtype' },
-    { text: 'Securities', icon: <Security/>, link: '/security' },
+    { text: 'Securities', icon: <Security/>, link: '/securityandsafety' },
     { text: 'Places', icon: <Place/>, link: '/place' },
     { text: 'Rooms', icon: <GridOn/>, link: '/room' },
     { text: 'Login Page', icon: <PermIdentity/>, link: '/login' }

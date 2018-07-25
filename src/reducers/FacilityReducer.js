@@ -9,9 +9,10 @@ export default (state = [], action) => {
         case 'EDIT_FACILITY':
             return state.map((facility) => {
                 if (facility.id === action.id) {
+                    let itemObject = {id: action.id, item: action.item}
                     return {
                         ...facility,
-                        ...action.updates
+                        ...itemObject
                     }
                 } else {
                     return facility;
